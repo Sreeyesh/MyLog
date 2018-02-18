@@ -17,7 +17,7 @@
           <td><%= act.date_from %></td>
           <td><%= act.date_to %></td>
           <!--<td>4 hrs</td>-->
-          <td></td>
+          <td><button type="button" onClick = "deleteActivity(<%= act.id %>)" style="float: right;" class="btn btn-danger btn-xs">Delete Activity</button></td>
           </tr> 
        <% end %>
     

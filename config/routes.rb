@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'account/sign_in'
 
   post '/save_activity' => 'home#save_activity'
+  post '/delete_activity' => 'home#delete_activity'
   get '/chage_date' => 'home#chage_date'
   
 

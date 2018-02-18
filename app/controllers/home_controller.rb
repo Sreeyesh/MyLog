@@ -19,6 +19,11 @@ class HomeController < ApplicationController
   	redirect_to root_path(date: params[:activity][:date_selcted])
   end
 
+  def delete_activity
+    Activity.find(params[:id]).destroy
+    redirect_to root_path(date: params[:date])
+  end
+
 
   private 
 
