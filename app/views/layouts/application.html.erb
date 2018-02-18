@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyLog</title>
+    <%= csrf_meta_tags %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'bootstrap-datepicker.min.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'bootstrap-timepicker.js', 'data-turbolinks-track': 'reload' %>
+    
+  </head>
+
+  <body>
+  	<!-- navbar -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="<%= root_path %>">Log Details</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#normalNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div id="normalNavbar" class="collapse navbar-collapse">
+		<ul class="nav navbar-nav navbar-right">
+		<li ><a href="#"><div class="navbar-text"><img src="http://www.gravatar.com/avatar/72be03093a6de30322123867f0b66441" class="img-circle" style="width:20px">Sreeyesh</div></a> </li>
+			<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
+        
+    </ul>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-fixed-bottom" style="background: moccasin;">
+<ul class="nav navbar-nav">
+    <li > <a href="#"><div class="navbar-text">© Developed By Sreeyesh</div></a> </li>
+       
+    </ul>
+
+  </nav>
+    <%= yield %>
+  </body>
+</html>
